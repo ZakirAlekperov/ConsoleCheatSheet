@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Консольная шпаргалка</string>
+    <string name="type">Типы данных Kotlin</string>
+    <string name="name">Название типа</string>
+    <string name="variableText">Примеры данных</string>
+    <string name="byteType">Byte</string>
+    <string name="_6_0_90">-6, 0, 90</string>
+    <string name="shortType">Short</string>
+    <string name="_3000_0_67">-3000, 0, 67</string>
+</resources>

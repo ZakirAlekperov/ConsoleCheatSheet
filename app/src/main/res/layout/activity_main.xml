@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/typeTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/type"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.100000024" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/typeTextView"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/nameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/nameTextView"
+                    style="@style/typeStyle"
+                    android:layout_width="match_parent"
+                    android:text="@string/name" />
+
+                <TextView
+                    style="@style/variableStyle"
+                    android:layout_width="match_parent"
+                    android:text="@string/variableText"
+                    tools:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/BiteLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/byteTextView"
+                    style="@style/typeStyle"
+                    android:layout_width="match_parent"
+                    android:text="@string/byteType" />
+
+                <TextView
+                    style="@style/variableStyle"
+                    android:layout_width="match_parent"
+                    android:text="@string/_6_0_90"
+                    tools:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ShortLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/shortTextView"
+                    style="@style/typeStyle"
+                    android:layout_width="match_parent"
+                    android:text="@string/shortType" />
+
+                <TextView
+                    style="@style/variableStyle"
+                    android:layout_width="match_parent"
+                    android:text="@string/_3000_0_67"
+                    tools:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/IntLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/typeStyle"
+                    android:layout_width="match_parent"
+                    android:text="Int" />
+
+                <TextView
+                    style="@style/variableStyle"
+                    android:layout_width="match_parent"
+                    android:text="-2^31 - 2^31-1"
+                    tools:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/intTextView"
+                    style="@style/typeStyle"
+                    android:layout_width="match_parent"
+                    android:text="Long" />
+
+                <TextView
+                    style="@style/variableStyle"
+                    android:layout_width="match_parent"
+                    android:text="-2^63 - 2^63-1"
+                    tools:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/typeStyle"
+                    android:layout_width="match_parent"
+                    android:text="Float" />
+
+                <TextView
+                    style="@style/variableStyle"
+                    android:layout_width="match_parent"
+                    android:text="-2,7, 0, 4.7"
+                    tools:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/typeStyle"
+                    android:layout_width="match_parent"
+                    android:text="Double" />
+
+                <TextView
+                    style="@style/variableStyle"
+                    android:layout_width="match_parent"
+                    android:text="-2^31 - 2^31-1"
+                    tools:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/typeStyle"
+                    android:layout_width="match_parent"
+                    android:text="Boolean" />
+
+                <TextView
+                    style="@style/variableStyle"
+                    android:layout_width="match_parent"
+                    android:text="true false"
+                    tools:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/typeStyle"
+                    android:layout_width="match_parent"
+                    android:text="Char" />
+
+                <TextView
+                    style="@style/variableStyle"
+                    android:layout_width="match_parent"
+                    android:text="a 6 ="
+                    tools:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/typeStyle"
+                    android:layout_width="match_parent"
+                    android:text="String" />
+
+                <TextView
+                    style="@style/variableStyle"
+                    android:layout_width="match_parent"
+                    android:text="dfdsg 547567h"
+                    tools:textSize="20sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
