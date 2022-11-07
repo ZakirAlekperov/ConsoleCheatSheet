@@ -26,16 +26,10 @@
         app:layout_constraintVertical_bias="0.100000024" />
 
     <ScrollView
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/typeTextView"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintTop_toBottomOf="@+id/typeTextView">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -59,6 +53,18 @@
                     android:layout_width="match_parent"
                     android:text="@string/variableText"
                     tools:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/typeStyle"
+                    android:layout_width="match_parent"
+                    android:text="Целочисленные типы" />
 
             </LinearLayout>
 
@@ -145,6 +151,98 @@
                 <TextView
                     style="@style/typeStyle"
                     android:layout_width="match_parent"
+                    android:text="Целочисленные типы без знака" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/typeStyle"
+                    android:layout_width="match_parent"
+                    android:text="UByte" />
+
+                <TextView
+                    style="@style/variableStyle"
+                    android:layout_width="match_parent"
+                    android:text="0, 46, 255"
+                    tools:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/typeStyle"
+                    android:layout_width="match_parent"
+                    android:text="UShort" />
+
+                <TextView
+                    style="@style/variableStyle"
+                    android:layout_width="match_parent"
+                    android:text="0, 32000, 65000"
+                    tools:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/typeStyle"
+                    android:layout_width="match_parent"
+                    android:text="UInt" />
+
+                <TextView
+                    style="@style/variableStyle"
+                    android:layout_width="match_parent"
+                    android:text="0 до 2^32 - 1"
+                    tools:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/typeStyle"
+                    android:layout_width="match_parent"
+                    android:text="ULong" />
+
+                <TextView
+                    style="@style/variableStyle"
+                    android:layout_width="match_parent"
+                    android:text="0 до 2^64 - 1"
+                    tools:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/typeStyle"
+                    android:layout_width="match_parent"
+                    android:text="Числа с плавающей точкой" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/typeStyle"
+                    android:layout_width="match_parent"
                     android:text="Float" />
 
                 <TextView
@@ -179,6 +277,18 @@
                 <TextView
                     style="@style/typeStyle"
                     android:layout_width="match_parent"
+                    android:text="Логический тип" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/typeStyle"
+                    android:layout_width="match_parent"
                     android:text="Boolean" />
 
                 <TextView
@@ -186,6 +296,18 @@
                     android:layout_width="match_parent"
                     android:text="true false"
                     tools:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/typeStyle"
+                    android:layout_width="match_parent"
+                    android:text="Символьный тип" />
+
             </LinearLayout>
 
             <LinearLayout
@@ -213,6 +335,18 @@
                 <TextView
                     style="@style/typeStyle"
                     android:layout_width="match_parent"
+                    android:text="Строковый тип" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/typeStyle"
+                    android:layout_width="match_parent"
                     android:text="String" />
 
                 <TextView
@@ -222,7 +356,96 @@
                     tools:textSize="20sp" />
             </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/typeStyle"
+                    android:layout_width="match_parent"
+                    android:text="Пустой тип" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/typeStyle"
+                    android:layout_width="match_parent"
+                    android:text="Unit" />
+
+                <TextView
+                    style="@style/variableStyle"
+                    android:layout_width="match_parent"
+                    android:text=""
+                    tools:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/typeStyle"
+                    android:layout_width="match_parent"
+                    android:text="Невозвращаемый тип" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/typeStyle"
+                    android:layout_width="match_parent"
+                    android:text="Nothing" />
+
+                <TextView
+                    style="@style/variableStyle"
+                    android:layout_width="match_parent"
+                    android:text=""
+                    tools:textSize="20sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/typeStyle"
+                    android:layout_width="match_parent"
+                    android:text="Произвольные данные" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/typeStyle"
+                    android:layout_width="match_parent"
+                    android:text="Any" />
+
+                <TextView
+                    style="@style/variableStyle"
+                    android:layout_width="match_parent"
+                    android:text=""
+                    tools:textSize="20sp" />
+            </LinearLayout>
+
         </LinearLayout>
     </ScrollView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
